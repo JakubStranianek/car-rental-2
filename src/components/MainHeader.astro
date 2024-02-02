@@ -1,0 +1,36 @@
+---
+import { Image } from 'astro:assets';
+---
+
+<div class="bg-gray-50">
+   <!-- Desktop header --> 
+   <div class="hidden lg:block relative w-[68%] mx-auto">      
+      <a href="/#kontakt" class="cursor-pointer">      
+      <Image
+      loading="lazy"
+      src="/images/headerMain.png"
+      alt='headerImage'
+      width={100}
+      height={100}
+      class="object-contain object-center w-full overflow-hidden"
+      />      
+      </a>
+   </div>
+
+   <!-- Mobile header --> 
+   <div class="lg:hidden relative w-full ">      
+      <Image
+      loading="lazy"
+      src="/images/headerMobile2.png"
+      alt='headerImage'
+      width={100}
+      height={100}
+      class="object-contain object-center w-full overflow-hidden"
+      />
+      <a href="/#kontakt">
+         <div class="w-4/5 mt-8 mx-auto bg-black text-white font-jost py-8 flex justify-center tracking-wider rounded-2xl text-2xl">REZERVOVAŤ</div>
+      </a>
+   </div>
+   
+
+</div>
